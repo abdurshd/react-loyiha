@@ -1,8 +1,8 @@
-function Button({ tugmaNomi = "bosing", orqaRang }) {
+function Button({ tugmaNomi = "bosing", orqaRang, onClick }) {
   return (
     <>
       <button
-        onClick={() => console.log("Qizil tugma bosildi")}
+        onClick={onClick}
         style={{
           backgroundColor: `${orqaRang}`,
           color: "white",
